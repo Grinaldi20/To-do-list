@@ -8,20 +8,50 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 
 
 // Funções
-todoForm.addEventListener("submit", (e) => {
- e.preventDefault();
+const saveTodo = (text) => {
+
+const todo = document.createElement("div");
+todo.classList.add("todo");
+
+const todoTitle = document.createElement("h3");
+todoTitle.innerHTML = text;
+todo.appendChild(todo.Title);
+
+const doneBtn = document.createElement("button")
+doneBtn.classList.add("finish-todo")
+doneBtn.innerHTML = '  <i class="fa-solid fa-check"></i>'
+todo.appendChild(editBtn)
+
+const editBtn = document.createElement("button")
+editForm.Btn.classList.add("finish-todo")
+editForm.Btn.innerHTML = '  <i class="fa-solid fa-check"></i>'
+todo.appendChild(editForm.Btn)
+
+const doneBtn = document.createElement("button")
+doneBtn.classList.add("finish-todo")
+doneBtn.innerHTML = '  <i class="fa-solid fa-check"></i>'
+todo.appendChild(editBtn)
 
 
- const inputValue = todoInput.ariaValueMax
-
-if (inputValue) {
 
 
 
-    
-}
-})
+
+};
 
 
 
 // Eventos
+todoForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+   
+   
+    const inputValue = todoInput.ariaValueMax
+   
+   if (inputValue) {
+    saveTodo(inputValue)
+   
+   }
+   })
+   
+   
