@@ -23,14 +23,14 @@ doneBtn.innerHTML = '  <i class="fa-solid fa-check"></i>'
 todo.appendChild(editBtn)
 
 const editBtn = document.createElement("button")
-editForm.Btn.classList.add("finish-todo")
-editForm.Btn.innerHTML = '  <i class="fa-solid fa-check"></i>'
+editForm.Btn.classList.add("edit-todo")
+editForm.Btn.innerHTML = '  <i class="fa-soliddeleteBtn"></i>'
 todo.appendChild(editForm.Btn)
 
-const doneBtn = document.createElement("button")
-doneBtn.classList.add("finish-todo")
-doneBtn.innerHTML = '  <i class="fa-solid fa-check"></i>'
-todo.appendChild(editBtn)
+const deleteBtn = document.createElement("button")
+deleteBtn.classList.add("remove-todo")
+deleteBtn.innerHTML = '  <i class="fa-solid fa-xmark"></i>'
+todo.appendChild(deleteBtn)
 
 
 
