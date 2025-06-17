@@ -1,4 +1,3 @@
-/*     Geral do projeto        */
 * {
     padding: 0;
     margin: 0;
@@ -7,15 +6,13 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-image: url("../img/todo2.jpg");
     background-position: center;
     background-size: cover;
-   
 }
 
-button{
+button {
     background-color: #fdfdfd;
     color: #102f5e;
     border: 2px solid #102f5e;
@@ -33,31 +30,27 @@ button:hover {
     color: #fdfdfd;
 }
 
-button:hover > i{
+button:hover > i {
     color: #fdfdfd;
 }
 
-button i{
+button i {
     color: #102f5e;
     font-weight: bold;
     pointer-events: none;
-
 }
 
-input , select{
+input, select {
     padding: 0.25rem 0.5rem;
-
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-/*   header  */
-
 .todo-container {
     max-width: 450px;
-    margin: 3rem auto ;
+    margin: 3rem auto;
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
@@ -69,34 +62,27 @@ input , select{
     border-bottom: 1px solid #ccc;
 }
 
-/* todo form */
 #todo-form, #edit-form {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
-    
 }
-
 
 #todo-form p, #edit-form p {
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
-.form-control  {
+.form-control {
     display: flex;
-
 }
 
 .form-control input {
     margin-right: 0.3rem;
-
 }
 
 #cancel-edit-btn {
     margin-top: 1rem;
 }
-
-/*  toolbar  */
 
 #toolbar {
     padding: 1rem;
@@ -105,11 +91,11 @@ input , select{
 }
 
 #toolbar h4 {
-    margin-bottom: .5rem ;
+    margin-bottom: .5rem;
 }
 
 #search {
-    border-right:  1px solid #ccc;
+    border-right: 1px solid #ccc;
     padding-right: 1rem;
     margin-right: 1rem;
     width: 65%;
@@ -123,7 +109,7 @@ input , select{
 
 #search input {
     width: 100%;
-    margin-right:  0.3rem;
+    margin-right: 0.3rem;
 }
 
 #filter {
@@ -133,29 +119,26 @@ input , select{
 }
 
 #filter select {
-  flex: 1;
+    flex: 1;
 }
-
-/*  to do list */
 
 .todo {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:  1rem;
-    border-bottom:  1px solid #ccc;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
     transition: 0.3s;
 }
 
 .todo h3 {
     flex: 1;
-    font-size:  0.9rem;
+    font-size: 0.9rem;
 }
 
 .todo button {
     margin-left: 0.4rem;
 }
-
 
 .done {
     background-color: #395169;
@@ -166,5 +149,3 @@ input , select{
     text-decoration: line-through;
     font-style: italic;
 }
-
- 
